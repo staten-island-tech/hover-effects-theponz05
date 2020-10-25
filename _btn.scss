@@ -1,9 +1,45 @@
-@import "_variables.scss"
+@import "_variables.scss";
 
 .btn,
 .btn:link,
 .btn:visited {
-    text-transform: uppercase;
-   
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2rem 5rem;
+  background-color: aqua;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+}
 
+
+.btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.4);
+
+}
+
+
+.btn::after {
+  content:"help";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 3s;
+}
+.btn:hover::after{
+  transform: scaleX(2) scaleY(2);
+  opacity: 0;
+}
+.btn:active{
+  transform: translateY(-100px);
+  transform: scaleX(2) scaleY(2);
+  box-shadow: 0 1rem 1rem rgba(0,0,0,1);
 }

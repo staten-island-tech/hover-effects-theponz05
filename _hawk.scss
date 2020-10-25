@@ -1,0 +1,19 @@
+@import "_variables.scss";
+
+.hawk{
+    height: 25rem;
+    transition: all 0.3s;
+    border-radius: 60%;
+
+}
+
+.hawk:hover {
+    border-radius: 0;
+    filter: grayscale(100%);
+}
+
+.hawk:active {
+ border-radius: 30%;
+ transform: scale(1.15);
+ filter: contrast(300%);
+}

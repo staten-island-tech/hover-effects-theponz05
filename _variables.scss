@@ -7,10 +7,15 @@ body {
 }
 $colors: (
     red: #ff0000
-    white: #ffffff
-    blue: #0000ff
-    black: #000000
+ );
+ $colors: ( white: #ffffff
+ );
+ $colors: (   blue: #0000ff
+ );
+ $colors: (   bruh: #000000
 );
+
+
 @function color($color-name) {
     @return map-get($colors, $color-name);
 }
