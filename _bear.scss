@@ -1,0 +1,20 @@
+@import "_variables.scss";
+
+.bear {
+    height: 25rem;
+    border-radius: 10%;
+    transition: all 0.3s;
+
+}
+
+.bear:hover {
+    transform: scale(1.75,0.571);
+    transition: 0.3s;
+}
+
+.bear:active {
+    transform: rotate(1turn);
+    transform: scale(0.75,1.25);
+    transition: 2s;
+    
+}
